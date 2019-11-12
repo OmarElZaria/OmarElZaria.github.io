@@ -10,6 +10,8 @@
 </head>
 <body>
 
+        <div id="like_button_container"></div>
+
 <button class="tablink" onclick="openPage('Home', this, 'green')" id="defaultOpen"><i class="fa fa-fw fa-home"></i>Home</button>
 <button class="tablink" onclick="openPage('About', this, 'green')" >About</button>
 <button class="tablink" onclick="openPage('Work', this, 'green')"></i>Work</button>
@@ -66,7 +68,7 @@
 <div id="Links" class="tabcontent">
     <h3><b>Get in touch</b></h3>
     <div class = "form">
-        <form method = "post" name = "myemailform" action = "C:/Users/Omar/Desktop/my_website/PHP/form-to-email.php">
+        <form method = "post" name = "myemailform" action = "./PHP/form-to-email.php">
             <p>
                 <label for = 'name'>Enter Name: </label><br>
                 <input type = "text" name = "name" placeholder="Your name ...">
@@ -98,5 +100,15 @@
   
 </div>
 <script src="./Javascript/script.js"></script>
+  <!-- Load React. -->
+  <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+  <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+
+  <!-- Load our React component. -->
+  <script src="like_button.js"></script>
+
+  <script src="https://unpkg.com/react@16/umd/react.production.min.js" crossorigin></script>
+<script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js" crossorigin></script>
 </body>
 </html> 
