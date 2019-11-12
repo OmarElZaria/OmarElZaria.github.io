@@ -6,172 +6,7 @@
 <link rel="stylesheet" type = "text/css" href = "style.css">
 <link rel="stylesheet" href = "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href = "https://www.w3schools.com/w3css/4/w3.css">
-<style>
-* {box-sizing: border-box}
-@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
-
-
-/* Set height of body and the document to 100% */
-body, html {
-  height: 100%;
-  margin: 0;
-  font-family: Arial;
-}
-
-/* Style tab links */
-.tablink {
-  background-color: #555;
-  color:white;
-  float: left;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  padding: 14px 16px;
-  font-size: 17px;
-  width: 25%;
-}
-
-.tablink:hover {
-  background-color: #ddd;
-  color: black
-}
-
-/* Style the tab content (and add height:100% for full page content) */
-.tabcontent {
-  color: black;
-  display: none;
-  padding: 50px 30px;
-  height: 100%;
-  line-height: 1.6;  
-}
-
-.contact-form{
-    font-family: 'Courier New', Courier, monospace;
-}
-
-.social-media{
-    text-align: center;
-    font-size: 50px;
-    height: 50%;
-    padding: 10px;
-}
-
-.form label{
-    text-align: left;
-}
-
-.form form{
-    text-align: center;
-}
-
-h3, h5{
-    text-align: center;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 30px; 
-
-}
-
-h2{
-    text-align: left;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 20px;
-}
-
-@-webkit-keyframes Gradient{
-    0%{
-        background-position: 0% 50%;
-    }
-
-    50%{
-        background-position: 100% 50%;
-    }
-    100%{
-        background-position: 0% 50%;
-    }
-}
-
-li{
-    list-style: none;
-    margin: 10px;
-    display: inline-block;
-    font-size: 50px;
-    padding: 20px 20px;
-    box-shadow: 0 5px 15px -5px #00000070;
-    border-radius: 30%;
-    position: relative;
-}
-
-li:hover{
-    cursor: pointer;
-}
-
-.center{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 50%;
-    border: 4px solid #282828;
-}
-
-.w3-container label{
-    text-align: right;
-}
-
-.img{
-    padding: 20px;
-}
-
-#percentage{
-    text-align: right;
-}
- 
-#parent{
-    text-align:center;
-    height: 40px;
-    white-space: nowrap;
-    overflow: hidden;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 30px;
-    color:black;
-    position: relative;
-}
-
-
-#parent{
-    animation: animated-text 4s steps(29,end) 1s 1 normal both
-}
-
-#border{
-    animation: animated-cursor 600ms steps(29,end) infinite;
-}
-
-@keyframes animated-text{
-  from{width: 0;}
-  to{width: 1200px;}
-}
-
-@keyframes animated-cursor{
-  from{border-right-color: rgba(0,255,0,.75);}
-  to{border-right-color: transparent;}
-}
-
-#Home {
-    padding: 170px 25px;
-    background-color:white;}
-#About {
-    background-color: white;}
-#Work {background-color:white;}
-#Links {
-    background: #282828;
-    background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
-    background-size: 700% 1000%;
-    animation: Gradient 15s ease infinite;
-}
-
-#Links label{
-    text-align: left;
-}
-</style>
+<link rel="stylesheet" href= "C:/Users/Omar/Desktop/my_website/CSS/style.css">
 </head>
 <body>
 
@@ -231,7 +66,7 @@ li:hover{
 <div id="Links" class="tabcontent">
     <h3><b>Get in touch</b></h3>
     <div class = "form">
-        <form method = "post" name = "myemailform" action = "form to-email.php">
+        <form method = "post" name = "myemailform" action = "C:/Users/Omar/Desktop/my_website/PHP/form-to-email.php">
             <p>
                 <label for = 'name'>Enter Name: </label><br>
                 <input type = "text" name = "name" placeholder="Your name ...">
@@ -262,27 +97,6 @@ li:hover{
     </div>
   
 </div>
-
-<script>
-function openPage(pageName,elmnt,color) {
-  var i, tabcontent, tablinks;
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablink");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].style.backgroundColor = "";
-  }
-  document.getElementById(pageName).style.display = "block";
-  elmnt.style.backgroundColor = color;
-}
-
-// Get the element with id="defaultOpen" and click on it
-document.getElementById('date').innerHTML = new Date().toDateString();
-document.getElementById("defaultOpen").click();
-
-</script>
-   
+<script src="C:/Users/Omar/Desktop/my_website/Javascript/script.js"></script>
 </body>
 </html> 
