@@ -13,9 +13,9 @@
         <div id="like_button_container"></div>
 
 <button class="tablink" onclick="openPage('Home', this, 'green')" id="defaultOpen"><i class="fa fa-fw fa-home"></i>Home</button>
-<button class="tablink" onclick="openPage('About', this, 'green')" >About</button>
-<button class="tablink" onclick="openPage('Work', this, 'green')"></i>Work</button>
-<button class="tablink" onclick="openPage('Links', this, 'green')">Links</button>
+<button class="tablink" onclick="openPage('About', this, 'green')" ><i class ="fa fa-fw fa-user"></i>About</button>
+<button class="tablink" onclick="openPage('Work', this, 'green')"><i class ="fa fa-fw fa-star"></i>Work</button>
+<button class="tablink" onclick="openPage('Links', this, 'green')"><i class ="fa fa-fw fa-envelope"></i>Contact</button>
 
 <div id="Home" class="tabcontent">
     <h3>Hello, I'm Omar ElZaria</h3>
@@ -34,8 +34,10 @@
     </p>    
     
     <div class = "w3-container">
-        <h2><b>Technical Skills</b></h2>
-        <div class="w3-light-grey w3-round">
+        <img src = "3273_-_Brainstorming-512.png" alt="technical_icon" style = "width: 60px;height: 60px;margin-left: 150px;" onclick="show_content()">
+        <img src = "values-icon.png" alt="values_icon" style = "width: 60px;height: 60px;margin-left: 350px;" onclick="show_values()">
+        <div class="w3-light-grey w3-round" id = "content" style="display: none">
+            <h2><u><b>Technical Skills</b></u></h2>
             <div class="w3-container w3-blue w3-round-xlarge" style="width:80%">    
                 <label>C++</lebel>
                 <label>80%</label>
@@ -45,7 +47,7 @@
                 <label>C 70%</label>
             </div>
             <br>
-            <div class="w3-container w3-blue w3-round-xlarge" style="width:60%">    
+            <div class="w3-container w3-blue w3-round-xlarge" style="width:70%">    
                 <label>HTML/CSS 70%</label>
             </div>
             <br>
@@ -58,7 +60,25 @@
             </div>
         </div>
 
+        <div id="values" style="display: none">
+            <h2><u><b>Values</b></u></h2>
+            <ul>
+                <li style="font-size: 20px; font-family: 'Courier New', Courier, monospace;">
+                    <b>Honesty:</b> Honest intentions in speech and actions gains the attention and respect of others. 
+                    It builds a strong foundation for trust within a community.
+                </li>
+                <li style="font-size: 20px; font-family: 'Courier New', Courier, monospace;">
+                    <b>Collaboration:</b> Shared goals and mutual support leads to greater success than isolated work and individual focus.
+                    Teamwork multiplies contribution.
+                </li>
+                <li style="font-size: 20px; font-family: 'Courier New', Courier, monospace;">
+                    <b>Integrity:</b> Our personal brand is both fragile and powerful and requires constant attention. Therefore, all my work is approached and tackled with integrity.
+                </li>
+            </ul>
+        </div>
     </div>
+
+    
 </div>
 
 <div id="Work" class="tabcontent">
@@ -78,7 +98,7 @@
                 <input type="text" name = "email" placeholder="Your email address...">
             </p>
             <p>
-                <label> Message: </label><br>
+                <label for = 'message'> Message: </label><br>
                 <textarea name = "message" placeholder="Your message..."></textarea>
             </p>
             <p>
@@ -94,21 +114,11 @@
         <i class = "fa fa-linkedin" aria-hidden = "true" onclick="window.location.href = 'https:www.linkedin.com/in/omar-elzaria';"></i>
         </li>
         <li>
-        <i class = "fa fa-file" aria-hidden="true" onclick="window.location.href = 'file:///C:/Users/Omar/Desktop/Resume%20(2).pdf';"></i>    
+        <i class = "fa fa-file-pdf-o" aria-hidden="true" onclick="window.location.href = 'file:///C:/Users/Omar/Desktop/Resume%20(2).pdf';"></i>    
         </li>
     </div>
   
 </div>
 <script src="./Javascript/script.js"></script>
-  <!-- Load React. -->
-  <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
-  <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
-  <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
-
-  <!-- Load our React component. -->
-  <script src="like_button.js"></script>
-
-  <script src="https://unpkg.com/react@16/umd/react.production.min.js" crossorigin></script>
-<script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js" crossorigin></script>
 </body>
 </html> 

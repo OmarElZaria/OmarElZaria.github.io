@@ -65,7 +65,7 @@ h3, h5{
 h2{
     text-align: left;
     font-family: 'Courier New', Courier, monospace;
-    font-size: 20px;
+    font-size: 70px;
 }
 
 @-webkit-keyframes Gradient{
@@ -79,6 +79,10 @@ h2{
     100%{
         background-position: 0% 50%;
     }
+}
+
+ul{
+    list-style: square;
 }
 
 li{
@@ -102,6 +106,11 @@ li:hover{
     margin-right: auto;
     border-radius: 50%;
     border: 4px solid #282828;
+}
+
+.icons{
+    width: 20px;
+    height: 20px;
 }
 
 .w3-container label{
@@ -162,3 +171,4 @@ li:hover{
 #Links label{
     text-align: left;
 }
+

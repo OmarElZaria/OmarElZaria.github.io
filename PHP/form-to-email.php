@@ -11,13 +11,13 @@ if(empty($name)||empty($visitor_email)){
     exit;
 }
 
-$email_form = 'omar.elzaria@mail.utoronto.ca';
+$email_from = 'omarelzaria@yahoo.com';
 $email_subject = "New Form submission";
 $email_body = "You have received a new message from the user $name. \n".
             "email address: $visitor_email\n"."Here is the message:\n $message". 
 
-$to = "omar.elzaria@mail.utoronto.ca";
-$headers = "Form: $email_form \r\n";
+$to = "omarelzaria@yahoo.com";
+$headers = "Form: $email_from \r\n";
 
 mail($to, $email_subject, $email_body, $headers);
 ?>

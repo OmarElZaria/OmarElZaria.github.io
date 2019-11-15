@@ -15,3 +15,23 @@ function openPage(pageName,elmnt,color) {
   // Get the element with id="defaultOpen" and click on it
   document.getElementById('date').innerHTML = new Date().toDateString();
   document.getElementById("defaultOpen").click();
+
+function show_content(){
+    var x = document.getElementById("content");
+
+    if(x.style.display === "none"){
+        x.style.display = "block";
+    }else{
+        x.style.display = "none";
+    }
+}
+
+function show_values(){
+    var x = document.getElementById("values");
+
+    if(x.style.display === "none"){
+        x.style.display = "block";
+    }else{
+        x.style.display = "none";
+    }
+}
