@@ -19,19 +19,21 @@ function openPage(pageName,elmnt,color) {
 function show_content(){
     var x = document.getElementById("content");
 
-    if(x.style.display === "none"){
+    if(x.style.display == "none"){
         x.style.display = "block";
     }else{
         x.style.display = "none";
-    }
+    } 
 }
 
 function show_values(){
-    var x = document.getElementById("values");
+    var y = document.getElementById("values");
 
-    if(x.style.display === "none"){
-        x.style.display = "block";
+
+    if(y.style.display == "none"){
+        y.style.display = "block";
+
     }else{
-        x.style.display = "none";
-    }
+        y.style.display = "none";
+    } 
 }

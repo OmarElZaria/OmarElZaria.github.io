@@ -9,8 +9,19 @@ body, html {
   font-family: Arial;
 }
 
+canvas {
+    background: linear-gradient(45deg, #0d1011 0% 20%, #163486);
+    /* #861625 */
+    height: 100%;
+    margin: 5;
+    padding: 0;
+    border: none;
+}
+
 /* Style tab links */
 .tablink {
+  z-index: 40;  
+  position: relative;
   background-color: #555;
   color:white;
   float: left;
@@ -55,17 +66,26 @@ body, html {
     text-align: center;
 }
 
-h3, h5{
+.profile_pic{
+    text-align: left;
+}
+
+h3{
+    text-align: left;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px; 
+}
+
+h5{
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
     font-size: 30px; 
-
 }
 
 h2{
     text-align: left;
     font-family: 'Courier New', Courier, monospace;
-    font-size: 70px;
+    font-size: 40px;
 }
 
 @-webkit-keyframes Gradient{
@@ -132,7 +152,7 @@ li:hover{
     overflow: hidden;
     font-family: 'Courier New', Courier, monospace;
     font-size: 30px;
-    color:black;
+    color: white;
     position: relative;
 }
 
@@ -156,15 +176,55 @@ li:hover{
 }
 
 #Home {
-    padding: 170px 25px;
-    background-color:white;}
+    padding: 125px 60px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    z-index: 20;
+    color: white;
+    transform: scale(1.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 #About {
-    background-color: white;}
-#Work {background-color:white;}
+    background-color: white;
+    background-size: 1000px 2000px;
+    position: absolute;
+    top:0;
+    left:0;
+    height:180vh;
+    padding: 50 px;
+}
+#Work {
+    background-color:white;
+    position: absolute;
+    padding: 100px;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 150vh;
+}
 #Links {
+    position: absolute;
+    padding: 100px;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 150vh;
+    text-align: center;
+    z-index: 20;
+    color: white;
+    transform: scale(1.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background: #282828;
     background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
-    background-size: 700% 1000%;
+    background-size: cover;
     animation: Gradient 15s ease infinite;
 }
 

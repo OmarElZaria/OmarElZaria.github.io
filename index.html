@@ -7,30 +7,35 @@
 <link rel="stylesheet" href = "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href = "https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href= "./CSS/style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Omar ElZaria</title>
+<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 
-        <div id="like_button_container"></div>
 
 <button class="tablink" onclick="openPage('Home', this, 'green')" id="defaultOpen"><i class="fa fa-fw fa-home"></i>Home</button>
 <button class="tablink" onclick="openPage('About', this, 'green')" ><i class ="fa fa-fw fa-user"></i>About</button>
 <button class="tablink" onclick="openPage('Work', this, 'green')"><i class ="fa fa-fw fa-star"></i>Work</button>
 <button class="tablink" onclick="openPage('Links', this, 'green')"><i class ="fa fa-fw fa-envelope"></i>Contact</button>
 
+<canvas></canvas>
 <div id="Home" class="tabcontent">
-    <h3>Hello, I'm Omar ElZaria</h3>
+
+    <h5>Hello, I'm Omar ElZaria</h5>
     <div id="parent"><b> I am an aspiring Software Engineer!</b></div id = "border"><div></div>
     <div id="parent"><b>I want to make things that <u>make a difference</u></b></div id = "border"><div></div>
     <h5 id='date'></h5>
 </div>
 
 <div id="About" class="tabcontent">
-    <img src = "https://media.licdn.com/dms/image/C4E03AQEj_uMKo1bimQ/profile-displayphoto-shrink_200_200/0?e=1577923200&v=beta&t=SxDUJ_fVj3S68KQHvNnljjNq8Zr8qFOTgOPMnbIlRUk" alt="media.licdn.com" class="center">
+    <img id = "profile_pic" src = "https://media.licdn.com/dms/image/C4E03AQEj_uMKo1bimQ/profile-displayphoto-shrink_200_200/0?e=1577923200&v=beta&t=SxDUJ_fVj3S68KQHvNnljjNq8Zr8qFOTgOPMnbIlRUk" alt="media.licdn.com" class="center">
     <h3><b>About Me</b></h3>
-    <p align = "center">I'm a third year computer engineering student at the University of Toronto. 
+    <p align = "left">I'm a third year computer engineering student at the University of Toronto. 
         <br>I'm currently seeking internship opportunities starting in May 2020.
         <br>I enjoy being challenged and engaged with projects that require me to work outside my comfort and knowledge set, as continuing to learn new development techniques are important for my personal growth.
-        <br>Some of my hobbies include playing basketball and soccer.
     </p>    
     
     <div class = "w3-container">
@@ -86,7 +91,7 @@
 </div>
 
 <div id="Links" class="tabcontent">
-    <h3><b>Get in touch</b></h3>
+    <h5><b>Get in touch</b></h5>
     <div class = "form">
         <form method = "post" name = "myemailform" action = "./PHP/form-to-email.php">
             <p>
@@ -120,5 +125,6 @@
   
 </div>
 <script src="./Javascript/script.js"></script>
+<script src="./Javascript/canvas.js"></script>
 </body>
 </html> 
