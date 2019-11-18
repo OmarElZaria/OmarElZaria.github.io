@@ -16,10 +16,10 @@
 <body>
 
 
-<button class="tablink" onclick="openPage('Home', this, 'green')" id="defaultOpen"><i class="fa fa-fw fa-home"></i>Home</button>
-<button class="tablink" onclick="openPage('About', this, 'green')" ><i class ="fa fa-fw fa-user"></i>About</button>
-<button class="tablink" onclick="openPage('Work', this, 'green')"><i class ="fa fa-fw fa-star"></i>Work</button>
-<button class="tablink" onclick="openPage('Links', this, 'green')"><i class ="fa fa-fw fa-envelope"></i>Contact</button>
+<button class="tablink" onclick="openPage('Home', this, 'maroon')" id="defaultOpen"><i class="fa fa-fw fa-home"></i>Home</button>
+<button class="tablink" onclick="openPage('About', this, 'maroon')" ><i class ="fa fa-fw fa-user"></i>About</button>
+<button class="tablink" onclick="openPage('Work', this, 'maroon')"><i class ="fa fa-fw fa-star"></i>Work</button>
+<button class="tablink" onclick="openPage('Links', this, 'maroon')"><i class ="fa fa-fw fa-envelope"></i>Contact</button>
 
 <canvas></canvas>
 <div id="Home" class="tabcontent">
@@ -39,8 +39,9 @@
     </p>    
     
     <div class = "w3-container">
-        <img src = "3273_-_Brainstorming-512.png" alt="technical_icon" style = "width: 60px;height: 60px;margin-left: 150px;" onclick="show_content()">
-        <img src = "values-icon.png" alt="values_icon" style = "width: 60px;height: 60px;margin-left: 350px;" onclick="show_values()">
+        <img src = "3273_-_Brainstorming-512.png" alt="technical_icon" style = "width: 60px;height: 60px;margin-left: 100px;" id = "icons" onclick="show_content()">
+        <img src = "values-icon.png" alt="values_icon" style = "width: 60px;height: 60px;margin-left: 350px;" id = "icons" onclick="show_values()">
+        <img src = "images.png" alt="hobbies_icon" style = "width: 60px;height: 60px;margin-left: 400px;" id = "icons" onclick="show_hobbies()">
         <div class="w3-light-grey w3-round" id = "content" style="display: none">
             <h2><u><b>Technical Skills</b></u></h2>
             <div class="w3-container w3-blue w3-round-xlarge" style="width:80%">    
@@ -81,13 +82,39 @@
                 </li>
             </ul>
         </div>
+
+        <div id="hobbies" style="display: none">
+            <h2><u><b>Hobbies</b></u></h2>
+            <ul>
+                <li style="font-size: 20px; font-family: 'Courier New', Courier, monospace; text-align: center;">
+                    <img src = "download.png" alt="basketball_icon"><br>
+                    <b>Basketball</b> 
+                </li>
+                <li style="font-size: 20px; font-family: 'Courier New', Courier, monospace; text-align: center; margin-left: 100px;" >
+                    <img src = "download (2).png" alt="soccer_icon"><br>
+                    <b>Soccer</b>
+                </li>
+                <li style="font-size: 20px; font-family: 'Courier New', Courier, monospace; text-align: center; margin-left: 150px;" >
+                    <img src = "download (4).png" alt="soccer_icon"><br>
+                    <b>Video Games</b>
+                </li>
+            </ul>
+        </div>
     </div>
 
     
 </div>
 
 <div id="Work" class="tabcontent">
-
+    <h3><b>Work Experience</b></h3>
+    <img src = "download (5).png" alt="habitat_icon"><br>
+    <h2><b>Restore Associate</b></h2>
+    <h1><b>HABITAT FOR HUMANITY, JUN 2019 – SEP 2019</b></h1>
+    <p>
+    •	Worked in an Agile work environment where I performed statistical analysis and data entry of all items donated to the restore.<br> 
+    •	Kept track of all merchandise at the restore through Excel and provide weekly updates regarding the amount of money that was successfully raised and document future goals and milestones.<br>
+    •	Communicated with clients and responded to their needs and requirements in an effective and efficient manner.<br>
+    </p>    
 </div>
 
 <div id="Links" class="tabcontent">

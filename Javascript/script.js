@@ -37,3 +37,15 @@ function show_values(){
         y.style.display = "none";
     } 
 }
+
+function show_hobbies(){
+    var z = document.getElementById("hobbies");
+
+
+    if(z.style.display == "none"){
+        z.style.display = "block";
+
+    }else{
+        z.style.display = "none";
+    } 
+}
