@@ -47,6 +47,9 @@ canvas {
   line-height: 1.6;  
 }
 
+.profile_pic{
+  font-size: 20px; 
+}
 .contact-form{
     font-family: 'Courier New', Courier, monospace;
 }
